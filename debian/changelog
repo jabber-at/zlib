@@ -1,3 +1,9 @@
+erlang-p1-zlib (0.2015.02.23-0.1local) unstable; urgency=medium
+
+  * Imported Upstream version 0.2015.02.23
+
+ -- Mathias Ertl <mati@jabber.at>  Sat, 07 Mar 2015 00:43:01 +0100
+
 erlang-p1-zlib (0.2014.05.06-1) unstable; urgency=medium
 
   * Imported Upstream version 0.2014.05.06
