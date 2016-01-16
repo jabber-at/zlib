@@ -2,7 +2,7 @@ Source: erlang-p1-zlib
 Priority: optional
 Maintainer: Mathias Ertl <mati@jabber.at>
 XSBC-Orig-Maintainer: Philipp Huebner <debalance@debian.org>
-Build-Depends: debhelper (>= 9), dh-rebar, zlib1g-dev
+Build-Depends: debhelper (>= 9), dh-rebar, zlib1g-dev, erlang-syntax-tools
 Standards-Version: 3.9.6
 Section: libs
 Homepage: https://github.com/processone/zlib
