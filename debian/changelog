@@ -3,6 +3,8 @@ erlang-p1-zlib (1.0.0-0.1) unstable; urgency=medium
   * New upstream release.
   * Use upstream releases instead of the latest git snapshot.
   * Use upstream-tag format to make use of upstream tags.
+  * Name me as maintainer in debian/control.
+  * Add VCS-* fields in debian/control.
 
  -- Mathias Ertl <mati@jabber.at>  Sat, 16 Jan 2016 13:33:44 +0100
 

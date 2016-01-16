@@ -1,10 +1,13 @@
 Source: erlang-p1-zlib
 Priority: optional
-Maintainer: Philipp Huebner <debalance@debian.org>
+Maintainer: Mathias Ertl <mati@jabber.at>
+XSBC-Orig-Maintainer: Philipp Huebner <debalance@debian.org>
 Build-Depends: debhelper (>= 9), dh-rebar, zlib1g-dev
 Standards-Version: 3.9.5
 Section: libs
 Homepage: https://github.com/processone/zlib
+VCS-Browser: https://github.com/jabber-at/zlib
+VCS-Git: https://github.com/jabber-at/zlib.git
 
 
 Package: erlang-p1-zlib
