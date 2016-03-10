@@ -1,6 +1,6 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: zlib
-Source: https://github.com/processone/zlib
+Upstream-Name: ezlib
+Source: https://github.com/processone/ezlib
 
 Files: *
 Copyright: 2002-2014 ProcessOne
