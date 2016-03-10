@@ -2,6 +2,7 @@ erlang-p1-zlib (1.0.1-0.1) unstable; urgency=medium
 
   * New upstream release.
   * Use new upstream repository at https://github.com/processone/ezlib.
+  * Merge changes from upstream package.
   * Conflict with ejabberd << 1:16.02.
 
  -- Mathias Ertl <mati@jabber.at>  Thu, 10 Mar 2016 15:21:03 +0100
