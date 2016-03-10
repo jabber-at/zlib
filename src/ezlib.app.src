@@ -1,10 +1,11 @@
 %%%----------------------------------------------------------------------
-%%% File    : rebar.config
+%%% File    : iconv.app.src
 %%% Author  : Evgeniy Khramtsov <ekhramtsov@process-one.net>
-%%% Purpose : Rebar build script. Compliant with rebar and rebar3.
-%%% Created : 8 May 2013 by Evgeniy Khramtsov <ekhramtsov@process-one.net>
+%%% Purpose : Application package description
+%%% Created : 4 Apr 2013 by Evgeniy Khramtsov <ekhramtsov@process-one.net>
 %%%
-%%% Copyright (C) 2002-2015 ProcessOne, SARL. All Rights Reserved.
+%%%
+%%% Copyright (C) 2002-2016 ProcessOne, SARL. All Rights Reserved.
 %%%
 %%% Licensed under the Apache License, Version 2.0 (the "License");
 %%% you may not use this file except in compliance with the License.
@@ -19,23 +20,19 @@
 %%% limitations under the License.
 %%%
 %%%----------------------------------------------------------------------
+{application, ezlib,
+ [{description,  "Native zlib driver for Erlang / Elixir"},
+  {vsn,          "1.0.1"},
+  {modules,      []},
+  {registered,   []},
+  {applications, [kernel, stdlib]},
+  {mod,          {ezlib_app,[]}},
 
-{erl_opts, [debug_info, {src_dirs, ["src"]}]}.
-
-{port_env, [{"CFLAGS", "$CFLAGS"},
-	    {"LDFLAGS", "$LDFLAGS"}]}.
-
-{port_specs, [{"priv/lib/ezlib_drv.so", ["c_src/ezlib_drv.c"]}]}.
-
-{clean_files, ["c_src/ezlib_drv.gcda", "c_src/ezlib_drv.gcno"]}.
-
-{cover_enabled, true}.
-{cover_export_enabled, true}.
-
-{xref_checks, [undefined_function_calls, undefined_functions, deprecated_function_calls, deprecated_functions]}.
-
-{profiles, [{test, [{erl_opts, [{src_dirs, ["src", "test"]}]}]}]}.
-{plugins, []}.
+  %% hex.pm packaging:
+  {files, ["src/", "c_src/ezlib_drv.c", "rebar.config", "rebar.config.script", "README.md", "LICENSE.txt"]},
+  {licenses, ["Apache 2.0"]},
+  {maintainers, ["ProcessOne"]},
+  {links, [{"Github", "https://github.com/processone/ezlib"}]}]}.
 
 %% Local Variables:
 %% mode: erlang
