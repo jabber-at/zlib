@@ -1,3 +1,9 @@
+erlang-p1-zlib (1.0.2-0.1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Mathias Ertl <mati@jabber.at>  Sun, 29 Jan 2017 12:49:54 +0100
+
 erlang-p1-zlib (1.0.1-0.1) unstable; urgency=medium
 
   * New upstream release.
