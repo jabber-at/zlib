@@ -10,6 +10,10 @@ DESTDIR=$(CURDIR)/debian/erlang-p1-zlib
 	dh $@ --buildsystem=rebar --with rebar
 
 
+override_dh_rebar:
+	dh_rebar -O--buildsystem=rebar -v
+
+
 override_dh_auto_configure:
 	./configure
 	dh_auto_configure
