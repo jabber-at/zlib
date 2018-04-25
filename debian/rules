@@ -11,7 +11,8 @@ DESTDIR=$(CURDIR)/debian/erlang-p1-zlib
 
 
 override_dh_rebar:
-	dh_rebar -O--buildsystem=rebar -v
+	# Disable dh_rebar because bionic build brakes otherwise
+	#dh_rebar -O--buildsystem=rebar -v
 
 
 override_dh_auto_configure:
